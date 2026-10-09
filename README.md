@@ -189,7 +189,7 @@ Gera automaticamente `__init__`, `__repr__` e `__eq__`, sem boilerplate. A mutab
 
 ```bash
 cd refatorado
-pip install -e ".[dev]"
+python -m pip install -e ".[dev]"
 ```
 
 ### Executar o programa
@@ -215,12 +215,12 @@ Transacao numero 8 efetivada com sucesso! Novos saldos: Conta Origem: conta: 573
 
 ```bash
 cd refatorado
-pytest -v
+python -m pytest -v
 ```
 
 ```bash
 # Com relatório de cobertura
-pytest --cov=transacao_financeira --cov-report=term-missing
+python -m pytest --cov=transacao_financeira --cov-report=term-missing
 ```
 
 ---

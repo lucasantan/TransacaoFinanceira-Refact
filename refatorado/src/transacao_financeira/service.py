@@ -31,14 +31,14 @@ class ServicoTransacao:
         with lock:
             origem = self._repositorio.buscar(transacao.conta_origem)
             if origem.saldo < transacao.valor:
-                print(f"Transacao numero {transacao.correlation_id} falhou: saldo insuficiente na conta {origem.numero}")
+                print(f"Transacao numero {transacao.correlation_id} foi cancelada por falta de saldo")
                 return
             destino = self._repositorio.buscar(transacao.conta_destino)
             origem.saldo -= transacao.valor
             destino.saldo += transacao.valor
             print(
-                f"Transacao numero {transacao.correlation_id} efetivada com sucesso!" 
-                f"Novos saldos: Conta Origem: conta: {origem.numero}, saldo: {origem.saldo} | Conta Destino: conta: {destino.numero}, saldo: {destino.saldo}"
+                f"Transacao numero {transacao.correlation_id} efetivada com sucesso! " 
+                f"Novos saldos: Conta Origem: {origem.saldo} | Conta Destino: {destino.saldo}"
             )
 
     def processar_em_ordem(self, transacoes: list[Transacao]) -> None:
