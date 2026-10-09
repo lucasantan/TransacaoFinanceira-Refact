@@ -17,7 +17,7 @@ class Transacao:
 class ServicoTransacao:
     def __init__(self, repositorio: RepositorioContas) -> None:
         self._repositorio = repositorio
-        self._locks = dict[int, Lock] = {}
+        self._locks: dict[int, Lock] = {}
         self._lock_resitro = Lock()
 
     def _obter_lock(self, numero_conta: int) -> Lock:

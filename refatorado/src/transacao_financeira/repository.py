@@ -7,7 +7,7 @@ class RepositorioContas(Protocol):
 
 class RepositorioContasMemoria:
     def __init__(self, contas: list[Conta]) -> None:
-        self._contas = dict[int, Conta] = {c.numero: c for c in contas}
+        self._contas: dict[int, Conta] = {c.numero: c for c in contas}
 
     def buscar(self, numero: int) -> Conta:
         if numero not in self._contas:
