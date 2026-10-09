@@ -201,14 +201,14 @@ python -m transacao_financeira.main
 
 **Saída esperada:**
 ```
-Transacao numero 1 foi efetivada com sucesso! Novos saldos: Conta Origem:30 | Conta Destino: 150
-Transacao numero 2 foi efetivada com sucesso! Novos saldos: Conta Origem:1 | Conta Destino: 159
-Transacao numero 3 foi efetivada com sucesso! Novos saldos: Conta Origem:100 | Conta Destino: 1578
-Transacao numero 4 foi cancelada por falta de saldo
-Transacao numero 5 foi efetivada com sucesso! Novos saldos: Conta Origem:89 | Conta Destino: 1889
-Transacao numero 6 foi efetivada com sucesso! Novos saldos: Conta Origem:738 | Conta Destino: 1249
-Transacao numero 7 foi cancelada por falta de saldo
-Transacao numero 8 foi efetivada com sucesso! Novos saldos: Conta Origem:588 | Conta Destino: 5050
+Transacao numero 1 efetivada com sucesso! Novos saldos: Conta Origem: conta: 938485762, saldo: 30 | Conta Destino: conta: 2147483649, saldo: 150
+Transacao numero 2 efetivada com sucesso! Novos saldos: Conta Origem: conta: 2147483649, saldo: 1 | Conta Destino: conta: 210385733, saldo: 159
+Transacao numero 3 efetivada com sucesso! Novos saldos: Conta Origem: conta: 347586970, saldo: 100 | Conta Destino: conta: 238596054, saldo: 1578
+Transacao numero 4 falhou: saldo insuficiente na conta 675869708
+Transacao numero 5 efetivada com sucesso! Novos saldos: Conta Origem: conta: 238596054, saldo: 89 | Conta Destino: conta: 674038564, saldo: 1889
+Transacao numero 6 efetivada com sucesso! Novos saldos: Conta Origem: conta: 573659065, saldo: 738 | Conta Destino: conta: 563856300, saldo: 1249
+Transacao numero 7 falhou: saldo insuficiente na conta 938485762
+Transacao numero 8 efetivada com sucesso! Novos saldos: Conta Origem: conta: 573659065, saldo: 588 | Conta Destino: conta: 675869708, saldo: 5050
 ```
 
 ### Executar os testes
