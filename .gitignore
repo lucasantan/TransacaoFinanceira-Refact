@@ -1,0 +1,66 @@
+# ===== .NET / C# =====
+bin/
+obj/
+*.user
+*.suo
+.vs/
+*.dll
+*.pdb
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Ambientes virtuais
+.venv/
+venv/
+env/
+ENV/
+
+# Build e empacotamento
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+pip-wheel-metadata/
+
+# Testes e cobertura
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.tox/
+.nox/
+
+# Type checkers e linters
+.mypy_cache/
+.ruff_cache/
+.pytype/
+
+# ===== .NET / C# (código original) =====
+bin/
+obj/
+*.user
+*.suo
+.vs/
+*.dll
+*.pdb
+
+# ===== IDEs e editores =====
+.vscode/
+.idea/
+*.swp
+
+# ===== Variáveis de ambiente e segredos =====
+.env
+.env.*
+*.pem
+
+# ===== Sistema operacional =====
+.DS_Store
+Thumbs.db
+desktop.ini
